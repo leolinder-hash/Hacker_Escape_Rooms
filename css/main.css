@@ -229,6 +229,44 @@ body {
   margin: 1rem 1rem 0.5rem 0;
 }
 
+.popular__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.popular__button-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.button__onsite {
+  display: block;
+  width: 250px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #8ACFE5;
+  color: black;
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  margin-left: 3.7rem;
+  margin-top: 1rem;
+}
+
+.button__link {
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: bold;
+  color: #36769D;
+  margin-top: 2rem;
+  margin-left: 7rem;
+}
+
+.button__online {
+  display: none;
+}
+
 .information__image {
   width: 480px;
 }
