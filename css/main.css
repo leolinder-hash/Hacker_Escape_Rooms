@@ -14,7 +14,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  border: 1px solid black;
   max-width: 480px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -40,7 +39,6 @@ body {
   font-family: Roboto;
   line-height: 1;
   margin-left: 1rem;
-  border: 1px solid black;
 }
 
 .menu {
@@ -64,7 +62,6 @@ body {
   align-items: center;
   flex-direction: column-reverse;
   margin: 0 auto 3rem auto;
-  border: 1px solid black;
 }
 
 .hacker__button {
@@ -72,6 +69,7 @@ body {
   width: 250px;
   height: 55px;
   border-radius: 5px;
+  border: none;
 }
 
 .hacker__button--online {
@@ -90,7 +88,7 @@ body {
   font-size: 20px;
   font-family: Roboto;
   font-weight: bold;
-  margin: 30px 0 30px 0;
+  margin: 40px 0 30px 0;
 }
 
 .hacker__profiles {
@@ -251,6 +249,7 @@ body {
   font-size: 20px;
   font-family: Roboto, sans-serif;
   font-weight: bold;
+  border: none;
   margin-left: 6rem;
   margin-top: 1rem;
 }
@@ -349,8 +348,69 @@ body {
   font-size: 20px;
   font-family: Roboto, sans-serif;
   font-weight: bold;
+  border: none;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.footer {
+  background-color: #011827;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding-top: 4rem;
+  padding-right: 1.5rem;
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+}
+.footer .footer__title,
+.footer .sitemap__item:first-child,
+.footer .socials__item:first-child {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.footer__title {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+}
+
+.footer__text {
+  margin: 0;
+  padding-bottom: 3rem;
+}
+
+.sitemap__list,
+.socials__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sitemap__item:nth-child(4) {
+  margin-bottom: 2rem;
+}
+
+.sitemap {
+  margin-top: 1rem;
+}
+
+.socials__list {
+  margin-top: 3rem;
+  padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
