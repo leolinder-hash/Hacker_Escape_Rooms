@@ -7,13 +7,22 @@
   <title>Hacker Escape Rooms</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <header class="header">
-      <img class="header__logo" src="">
-      <h1>Hacker Escape Rooms</h1>
+      <img class="header__logo" src="images/logo.png">
+      <h1 class="header__title">
+        Hacker <br>
+        Escape <br>
+        Rooms
+      </h1>
       <nav class="menu header__menu">
         <ul class="menu__list">
           <li class="menu__item">Play online</li>
@@ -25,33 +34,36 @@
     </header>
 
     <section class="hacker">
-      <img class="hacker__picture" src="">
+      <img class="hacker__picture" src="images/hacker.png">
       <div class="hacker__buttons">
-        <div class="hacker__button1">
-          <button type="button" class="hacker__button--online">
+        <div class="hacker__button__choice">
+          <button type="button" class="hacker__button hacker__button--online">
             Online challenges
           </button>
+          <a href="" class="hacker__link">Online challenges</a>
         </div>
-        <div class="hacker button2">
-          <button type="button" class="hacker__button--onsite">
-            On-site challenges
-          </button>
-        </div>
+        <button type="button" class="hacker__button hacker__button--onsite">
+          On-site challenges
+        </button>
       </div>
       <div class="hacker__profiles">
         <div class="hacker__profile">
-          <img class="profile1" src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam recusandae officia commodi cupiditate
-            nesciunt tenetur amet reiciendis in illo. Enim provident quos officia illo molestias quisquam excepturi
-            velit vel labore?
-          </p>
+          <img class="profile__img" src="images/profile.png">
+          <div class="hacker__profile-text">
+            <p class="hacker__quote">This is a quote about how amazing this place is and how much fun
+              me and my friends had when we tried it
+            </p>
+            <p class="hacker__author">John Doe, visited us in September 2021</p>
+          </div>
         </div>
         <div class="hacker__profile">
-          <img class="profile1" src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam recusandae officia commodi cupiditate
-            nesciunt tenetur amet reiciendis in illo. Enim provident quos officia illo molestias quisquam excepturi
-            velit vel labore?
-          </p>
+          <img class="profile__img" src="images/profile.png">
+          <div class="hacker__profile-text">
+            <p class="hacker__quote">This is a quote about how amazing this place is and how much fun
+              me and my friends had when we tried it
+            </p>
+            <p class="hacker__author">John Doe, visited us in September 2021</p>
+          </div>
         </div>
       </div>
     </section>
@@ -59,61 +71,64 @@
     <section class="popular">
       <h2 class="popular__title">Popular challenges right now</h2>
       <div class="popular__cards">
-        <article class="card popular__card">
-          <img class="card__image" src="">
-          <h3 class="card__title">Title of room (on-site)</h3>
+        <article class="popular__card">
+          <img class="card__image" src="images/hacker.png">
+          <div class="popular__text">
+            <h3 class="card__title">Title of room (on-site)</h3>
             <div class="card__rating">
               <span class="card__star">★</span>
               <span class="card__star">★</span>
               <span class="card__star">★</span>
               <span class="card__star">★</span>
-              <span class="card__star">★</span>
+              <span class="card__star--empty">★</span>
+              <span class="card__participants">2-6 participants</span>
             </div>
-            <span>2-6 participants</span>
             <p class="card__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores impedit eius totam commodi, voluptatibus
-              deserunt numquam, eligendi rerum, consectetur mollitia nulla nemo possimus tempora ex dolor quod harum
-              quisquam placeat.
+              deserunt.
             </p>
-            <button type="button" class="card__button">Book this room</button>
+          </div>
+          <button type="button" class="card__button">Book this room</button>
         </article>
 
-        <article class="card popular__card">
-          <img class="card__image" src="">
-          <h3 class="card__title">Title of room (on-site)</h3>
+        <article class="popular__card">
+          <img class="card__image" src="images/hacker.png">
+          <div class="popular__text">
+            <h3 class="card__title">Title of room (on-site)</h3>
             <div class="card__rating">
               <span class="card__star">★</span>
               <span class="card__star">★</span>
               <span class="card__star">★</span>
               <span class="card__star">★</span>
-              <span class="card__star">★</span>
+              <span class="card__star--empty">★</span>
+              <span class="card__participants">2-6 participants</span>
             </div>
-            <span>2-6 participants</span>
             <p class="card__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores impedit eius totam commodi, voluptatibus
-              deserunt numquam, eligendi rerum, consectetur mollitia nulla nemo possimus tempora ex dolor quod harum
-              quisquam placeat.
+              deserunt.
             </p>
-            <button type="button" class="card__button">Book this room</button>
+          </div>
+          <button type="button" class="card__button">Book this room</button>
         </article>
 
-        <article class="card popular__card">
-          <img class="card__image" src="">
-          <h3 class="card__title">Title of room (on-site)</h3>
+        <article class="popular__card">
+          <img class="card__image" src="images/hacker.png">
+          <div class="popular__text">
+            <h3 class="card__title">Title of room (on-site)</h3>
             <div class="card__rating">
               <span class="card__star">★</span>
               <span class="card__star">★</span>
               <span class="card__star">★</span>
               <span class="card__star">★</span>
-              <span class="card__star">★</span>
+              <span class="card__star--empty">★</span>
+              <span class="card__participants">2-6 participants</span>
             </div>
-            <span>2-6 participants</span>
             <p class="card__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores impedit eius totam commodi, voluptatibus
-              deserunt numquam, eligendi rerum, consectetur mollitia nulla nemo possimus tempora ex dolor quod harum
-              quisquam placeat.
+              deserunt.
             </p>
-            <button type="button" class="card__button">Book this room</button>
+          </div>
+          <button type="button" class="card__button">Book this room</button>
         </article>
       </div>
       <nav class="popular__buttons">
@@ -130,7 +145,7 @@
         </button>
       </div>
       <div class="information__row">
-        <img class="information__image" src="" alt="">
+        <img class="information__image" src="images/informationOne.jpg">
         <div class="information__content">
           <h3 class="information__title">
             Play with your friends or build your team stronger at work
@@ -155,7 +170,7 @@
             See all challenges
           </button>
         </div>
-        <img class="information__image" src="" alt="">
+        <img class="information__image" src="images/informationTwo.jpg">
       </div>
     </section>
 
@@ -190,4 +205,5 @@
   </div>
   <script src='main.js'></script>
 </body>
+
 </html>
