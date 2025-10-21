@@ -233,6 +233,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .popular__button-group {
@@ -250,7 +251,7 @@ body {
   font-size: 20px;
   font-family: Roboto, sans-serif;
   font-weight: bold;
-  margin-left: 3.7rem;
+  margin-left: 6rem;
   margin-top: 1rem;
 }
 
@@ -260,15 +261,96 @@ body {
   font-weight: bold;
   color: #36769D;
   margin-top: 2rem;
-  margin-left: 7rem;
+  margin-left: 9.7rem;
 }
 
 .button__online {
   display: none;
 }
 
+.information__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 480px;
+  height: 30rem;
+  background-color: #011827;
+}
+
+.information__box .information__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  padding-top: 5rem;
+  color: white;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.information__box .information__button {
+  display: block;
+  width: 250px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #011827;
+  color: #8ACFE5;
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  border: 2px solid #8ACFE5;
+  margin-left: 7.5rem;
+  margin-bottom: 5rem;
+}
+
+.information__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.information__row--reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .information__image {
   width: 480px;
+}
+
+.information__content {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.information__title {
+  font-style: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  padding-top: 1rem;
+  margin: 0;
+}
+
+.information__content .information__text {
+  color: black;
+  padding: 0;
+  padding-top: 1.5rem;
+  margin: 0;
+  font-style: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+.information__content .information__button {
+  display: block;
+  width: 250px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #E3170A;
+  color: white;
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 /*# sourceMappingURL=main.css.map */
