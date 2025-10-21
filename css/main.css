@@ -155,9 +155,20 @@ body {
 }
 
 .popular__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 300px;
   flex: 0 0 auto;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(182, 189, 181, 0.5);
+}
+
+.popular__text {
+  padding-left: 1.5rem;
+  padding-right: 1rem;
 }
 
 .card__image {
@@ -165,10 +176,11 @@ body {
 }
 
 .card__title {
-  font-size: 27px;
+  font-size: 22px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin: 0;
+  padding-top: 5px;
 }
 
 .card__rating {
@@ -204,9 +216,17 @@ body {
   padding-left: 0.25rem;
 }
 
-.popular__text {
-  padding-left: 2rem;
-  font-family: "Roboto", sans-serif;
+.card__button {
+  font-style: "Roboto", sans-serif;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #E3170A;
+  width: 135px;
+  height: 34px;
+  align-self: flex-end;
+  margin: 1rem 1rem 0.5rem 0;
 }
 
 .information__image {
