@@ -1,25 +1,213 @@
-html, body {
+@charset "UTF-8";
+html,
+body {
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   border: 1px solid black;
-  height: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-h1 {
+.header {
+  display: flex;
+  background-color: #011827;
+  grid-column: 1;
+  height: 144px;
+  align-items: center;
+}
+
+.header__logo {
+  width: 128px;
+  height: 82px;
+  margin-left: 1.5rem;
+}
+
+.header__title {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: Roboto;
+  line-height: 1;
+  margin-left: 1rem;
   border: 1px solid black;
+}
+
+.menu {
+  display: none;
+  border: 1px solid black;
+  /* Förhindrar att menyn syns i mobilläget */
 }
 
 .menu__list {
   border: 1px solid black;
 }
 
+.hacker__picture {
+  display: block;
+  width: 100%;
+}
+
 .hacker__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin: 0 auto 3rem auto;
   border: 1px solid black;
+}
+
+.hacker__button {
+  display: block;
+  width: 250px;
+  height: 55px;
+  border-radius: 5px;
+}
+
+.hacker__button--online {
+  display: none;
+}
+
+.hacker__link {
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: bold;
+  color: #36769D;
+}
+
+.hacker__button--onsite {
+  background-color: #8ACFE5;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: bold;
+  margin: 30px 0 30px 0;
+}
+
+.hacker__profiles {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.hacker__profile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.75rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.profile__img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+.hacker__quote {
+  padding: 0;
+  margin: 0 1rem 0 auto;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  width: 290px;
+}
+
+.hacker__author {
+  margin-top: 0.5rem;
+  margin-left: auto;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 1.5rem;
+}
+
+.hacker__profile:nth-child(2) {
+  display: none;
+}
+
+.popular {
+  overflow-x: hidden;
+  padding-left: 1.5rem;
+}
+
+.popular__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  padding-bottom: 1rem;
+}
+
+.popular__cards {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-left: 1.5rem;
+}
+
+.popular__card {
+  width: 300px;
+  flex: 0 0 auto;
+  border: 1px solid black;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__title {
+  font-size: 27px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.card__rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding-left: 0.25rem;
+  line-height: 1;
+}
+
+.card__participants {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  top: 2px;
+  padding-left: 0.25rem;
+}
+
+.card__star {
+  color: #E3170A;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.card__star--empty {
+  background-color: transparent;
+  text-shadow: 0 0 0 #E3170A;
+}
+
+.card__description {
+  padding-left: 0.25rem;
+}
+
+.popular__text {
+  padding-left: 1rem;
+}
+
+.information__image {
+  width: 480px;
 }
 
 /*# sourceMappingURL=main.css.map */
