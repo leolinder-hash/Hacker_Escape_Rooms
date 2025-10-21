@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 html,
 body {
@@ -162,9 +163,20 @@ body {
 }
 
 .popular__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 300px;
   flex: 0 0 auto;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow:hidden;
+  box-shadow: 0 0 15px rgba($color-grey, 0.5);
+}
+
+.popular__text {
+  padding-left: 1.5rem;
+  padding-right: 1rem;
 }
 
 .card__image {
@@ -172,10 +184,11 @@ body {
 }
 
 .card__title {
-  font-size: 27px;
+  font-size: 22px;
   font-family: $font-main;
   font-weight: 400;
   margin: 0;
+  padding-top: 5px;
 }
 
 .card__rating {
@@ -196,22 +209,32 @@ body {
 
 .card__star {
   color: $color-red;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1;
-  
+  width: 10px;
+  object-fit: contain;
 }
 
-.card__star--empty{
-  background-color: transparent;
-  text-shadow: 0 0 0 $color-red; 
+.card__star--empty {
+  color: white;
+  -webkit-text-stroke: 1.5px $color-red;
 }
 
-.card__description{
+.card__description {
   padding-left: 0.25rem;
 }
 
-.popular__text {
-  padding-left: 1rem;
+.card__button{
+font-style:$font-main;
+font-weight: 400;
+border: none;
+border-radius: 5px;
+color: white;
+background-color: $color-red;
+width: 135px;
+height: 34px;
+align-self: flex-end;
+margin: 1rem 1rem 0.5rem 0;
 }
 
 .information__image {
