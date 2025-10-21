@@ -189,13 +189,15 @@ body {
 
 .card__star {
   color: #E3170A;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1;
+  width: 10px;
+  object-fit: contain;
 }
 
 .card__star--empty {
-  background-color: transparent;
-  text-shadow: 0 0 0 #E3170A;
+  color: white;
+  -webkit-text-stroke: 1.5px #E3170A;
 }
 
 .card__description {
@@ -203,7 +205,8 @@ body {
 }
 
 .popular__text {
-  padding-left: 1rem;
+  padding-left: 2rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .information__image {
