@@ -164,7 +164,7 @@ body {
   flex: 0 0 auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 0 0 15px rgba($color-grey, 0.5);
 }
 
@@ -389,6 +389,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    border: 1px solid black;
   }
 
   .header {
@@ -539,6 +540,73 @@ body {
     word-break: keep-all;
     max-width: 280px;
   }
+
+  .popular {
+    padding: 0;
+    margin: 0;
+  }
+
+  .popular__title {
+    font-size: 36px;
+    font-family: $font-main, Arial, Helvetica, sans-serif;
+    margin-left: 32%;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .popular__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: visible;
+    padding: 0 3rem;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .popular__card {
+    width: 340px;
+    height: 410px;
+    box-shadow: 0 4px rgba(182, 189, 181, 1);
+    overflow: hidden;
+  }
+
+  .popular__text {
+    padding: 0;
+    margin-left: 1rem;
+  }
+
+  .card__title {
+    font-size: 26px;
+    padding-top: 1rem;
+  }
+
+  .card__rating {
+    padding-top: 0.3rem;
+  }
+
+  .card__star {
+    padding-left: 0.3px;
+  }
+
+  .card__participants {
+    padding-left: 9.4rem;
+  }
+
+  .card__description {
+    font-size: 18px;
+    margin-right: 1.5rem;
+  }
+
+  .card__button {
+    width: 167px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  
+
+
 
 
 
