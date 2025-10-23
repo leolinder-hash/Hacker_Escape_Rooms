@@ -604,7 +604,139 @@ body {
     font-size: 15px;
   }
 
-  
+  .popular__buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .popular__button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+  }
+
+  .button__onsite {
+    @include button($color-blue, black);
+    padding: 0;
+    margin: 0;
+    width: 308px;
+  }
+
+  .button__online {
+    @include button($color-red, white);
+    padding: 0;
+    margin: 0;
+    width: 308px;
+  }
+
+  .button__link {
+    display: none;
+  }
+
+  .information__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .information__box .information__text {
+    font-size: 25px;
+    width: 50%;
+  }
+
+  .information__box .information__button {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 7rem;
+    width: 279px;
+    height: 60px;
+  }
+
+  .information__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .information__image {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+  }
+
+  .information__title {
+    font-size: 32px;
+    font-family: $font-main, Arial, Helvetica, sans-serif;
+  }
+
+  .information__content .information__text {
+    padding-top: 0.7rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .information__content {
+    width: 65%;
+    align-self: center;
+    justify-self: center;
+    margin-top: -1rem;
+  }
+
+  .information__content .information__button {
+    width: 279px;
+    height: 60px;
+    margin: 0;
+  }
+
+  .information__row--reverse {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    padding-bottom: 9rem;
+  }
+
+  .information__image:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .information__row--reverse .information__title {
+    width: 110%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: flex-start;
+    gap: 6.7rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .footer__information {
+    align-items: flex-start;
+    justify-items: flex-start;
+    width: 37%;
+    margin-left: 5rem;
+  }
+
+  .footer__sitemap, .socials__list{
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__sitemap{
+    margin-left: 3rem;
+  }
+
+
 
 
 
