@@ -8,14 +8,8 @@ body {
   padding: 0;
 }
 
-body {
-  display: block;
-}
-
 .container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   max-width: 480px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -45,12 +39,6 @@ body {
 
 .menu {
   display: none;
-  border: 1px solid black;
-  /* Förhindrar att menyn syns i mobilläget */
-}
-
-.menu__list {
-  border: 1px solid black;
 }
 
 .hacker__picture {
@@ -67,30 +55,21 @@ body {
 }
 
 .hacker__button {
-  display: block;
-  width: 250px;
-  height: 55px;
-  border-radius: 5px;
+  width: 308px;
+  height: 66px;
   border: none;
 }
-
 
 .hacker__button--online {
   display: none;
 }
 
 .hacker__link {
-  font-size: 16px;
-  font-family: Roboto;
-  font-weight: bold;
-  color: #36769D;
+  @include link-button($color-dark-blue);
 }
 
 .hacker__button--onsite {
-  background-color: $color-blue;
-  font-size: 20px;
-  font-family: Roboto;
-  font-weight: bold;
+  @include button($color-blue, black);
   margin: 40px 0 30px 0;
 }
 
@@ -104,7 +83,6 @@ body {
   flex-direction: row;
   align-items: flex-start;
   gap: 0.75rem;
-  width: 100%;
   margin-bottom: 1.5rem;
 }
 
@@ -139,7 +117,6 @@ body {
   overflow-x: hidden;
   padding-left: 1.5rem;
 }
-
 
 .popular__title {
   font-family: $font-main;
@@ -182,6 +159,7 @@ body {
   font-family: $font-main;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 0.2rem;
   padding-top: 5px;
 }
 
@@ -189,24 +167,14 @@ body {
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  padding-left: 0.25rem;
+  padding-left: 0.2rem;
   line-height: 1;
-}
-
-.card__participants {
-  font-size: 12px;
-  font-family: $font-main;
-  position: relative;
-  top: 2px;
-  padding-left: 0.25rem;
 }
 
 .card__star {
   color: $color-red;
-  font-size: 15px;
-  line-height: 1;
-  width: 10px;
   object-fit: contain;
+  width: 4%;
 }
 
 .card__star--empty {
@@ -214,13 +182,22 @@ body {
   -webkit-text-stroke: 1.5px $color-red;
 }
 
+.card__participants {
+  font-size: 10px;
+  font-family: $font-main;
+  position: relative;
+  top: 2px;
+  padding-left: 0.25rem;
+}
+
 .card__description {
   padding-left: 0.25rem;
 }
 
 .card__button {
-  font-style: $font-main;
-  font-weight: 400;
+  font-family: $font-main, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
   color: white;
@@ -246,7 +223,7 @@ body {
 .button__onsite {
   @include button($color-blue, black);
   border: none;
-  margin-left: 6rem;
+  margin-left: 4rem;
   margin-top: 1rem;
 }
 
@@ -266,12 +243,13 @@ body {
   justify-content: space-between;
   width: 480px;
   height: 30rem;
+  padding-bottom: 2rem;
   background-color: $color-black;
 }
 
 .information__box .information__text {
-  font-family: $font-main;
-  font-size: 23px;
+  font-family: $font-main, Arial, Helvetica, sans-serif;
+  font-size: 28px;
   font-weight: 400;
   padding-top: 5rem;
   color: white;
@@ -283,8 +261,8 @@ body {
 .information__box .information__button {
   @include button($color-black, $color-blue);
   border: 2px solid $color-blue;
-  margin-left: 7.5rem;
-  margin-bottom: 5rem;
+  margin-left: 5.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .information__row {
@@ -301,17 +279,17 @@ body {
   width: 480px;
 }
 
-.information__content {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .information__title {
-  font-style: $font-main;
+  font-family: $font-main, Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 32px;
   padding-top: 1rem;
   margin: 0;
+}
+
+.information__content {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .information__content .information__text {
@@ -319,7 +297,7 @@ body {
   padding: 0;
   padding-top: 1.5rem;
   margin: 0;
-  font-style: $font-main;
+  font-family: $font-main, Arial, Helvetica, sans-serif;
   font-size: 24px;
 }
 
@@ -329,7 +307,6 @@ body {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-
 
 .footer {
   background-color: $color-black;
@@ -389,11 +366,9 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px solid black;
   }
 
   .header {
-    display: flex;
     align-items: flex-start;
     padding-bottom: 4.2rem;
   }
@@ -425,13 +400,13 @@ body {
 
   .header__menu {
     margin-top: 3.5rem;
-    margin-left: 4.3rem;
+    margin-left: 3.5rem;
   }
 
   .menu__list {
     display: flex;
     flex-direction: row;
-    gap: 5rem;
+    gap: 7rem;
     margin: 0;
     padding: 0;
   }
@@ -472,10 +447,10 @@ body {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-
   }
 
   .hacker__button--onsite {
+    @include button($color-blue, black);
     margin: 0;
     padding: 0;
     width: 308px;
@@ -494,8 +469,8 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 8rem;
-    margin-left: 6rem;
-    gap: 0.5rem;
+    margin-left: 4rem;
+    gap: 2.5rem;
   }
 
   .hacker__profile {
@@ -543,7 +518,6 @@ body {
 
   .popular {
     padding: 0;
-    margin: 0;
   }
 
   .popular__title {
@@ -599,8 +573,8 @@ body {
   }
 
   .card__button {
-    width: 167px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
     font-size: 15px;
   }
 
@@ -617,7 +591,7 @@ body {
   .popular__button-group {
     display: flex;
     flex-direction: row;
-    justify-content: center
+    justify-content: center;
   }
 
   .button__onsite {
@@ -632,6 +606,7 @@ body {
     padding: 0;
     margin: 0;
     width: 308px;
+    border: none;
   }
 
   .button__link {
@@ -647,7 +622,7 @@ body {
   }
 
   .information__box .information__text {
-    font-size: 25px;
+    font-size: 28px;
     width: 50%;
   }
 
@@ -685,7 +660,7 @@ body {
     width: 65%;
     align-self: center;
     justify-self: center;
-    margin-top: -1rem;
+    padding-left: 0;
   }
 
   .information__content .information__button {
@@ -696,8 +671,6 @@ body {
 
   .information__row--reverse {
     display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 1;
     padding-bottom: 9rem;
   }
 
@@ -727,27 +700,13 @@ body {
     margin-left: 5rem;
   }
 
-  .footer__sitemap, .socials__list{
+  .footer__sitemap,
+  .socials__list {
     margin: 0;
     padding: 0;
   }
 
-  .footer__sitemap{
+  .footer__sitemap {
     margin-left: 3rem;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
